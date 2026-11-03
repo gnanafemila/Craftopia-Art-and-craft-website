@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorials - Craftopia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">C</div>
+                    <span class="logo-text">Craftopia</span>
+                </a>
+                
+                <div class="nav-links" id="navLinks">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="tutorials.html" class="nav-link active">Tutorials</a>
+                    <a href="events.html" class="nav-link">Events</a>
+                    <a href="submit-craft.html" class="nav-link">Submit Craft</a>
+                    <a href="create-event.html" class="nav-link">Create Event</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+
+                <div class="user-menu" id="userMenu"></div>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main style="padding: 2rem 0;">
+        <div class="container">
+            <!-- Header -->
+            <div style="margin-bottom: 2rem;">
+                <h1 class="section-title">Craft Tutorials</h1>
+                <p class="section-subtitle">Explore <span id="totalCrafts">0</span> amazing craft ideas</p>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" class="search-input" placeholder="Search for crafts...">
+            </div>
+
+            <!-- Filters -->
+            <div class="filter-section">
+                <div class="filter-header">
+                    <i class="fas fa-filter"></i>
+                    <h2>Filters</h2>
+                </div>
+
+                <div class="filter-group">
+                    <label class="form-label">Category</label>
+                    <div class="filter-buttons" id="categoryFilters"></div>
+                </div>
+
+                <div class="filter-group">
+                    <label class="form-label">Difficulty Level</label>
+                    <div class="filter-buttons" id="difficultyFilters">
+                        <button class="filter-btn active" data-difficulty="All">All</button>
+                        <button class="filter-btn" data-difficulty="Easy">Easy</button>
+                        <button class="filter-btn" data-difficulty="Medium">Medium</button>
+                        <button class="filter-btn" data-difficulty="Hard">Hard</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results Count -->
+            <div style="margin-bottom: 1.5rem;">
+                <p class="section-subtitle">Showing <span id="resultsCount">0</span> result(s)</p>
+            </div>
+
+            <!-- Crafts Grid -->
+            <div class="craft-grid" id="craftsGrid"></div>
+
+            <!-- Empty State -->
+            <div id="emptyState" class="empty-state" style="display: none;">
+                <div class="empty-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3 class="empty-title">No crafts found</h3>
+                <p class="empty-description">Try adjusting your search or filters.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">C</div>
+                        <span class="logo-text">Craftopia</span>
+                    </div>
+                    <p class="footer-description">
+                        Your ultimate destination for craft tutorials and creative inspiration.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="tutorials.html">Tutorials</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="submit-craft.html">Submit Craft</a></li>
+                        <li><a href="create-event.html">Create Event</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Craftopia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="tutorials.js"></script>
+</body>
+</html>

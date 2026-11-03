@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craftopia - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">C</div>
+                    <span class="logo-text">Craftopia</span>
+                </a>
+                
+                <div class="nav-links" id="navLinks">
+                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="tutorials.html" class="nav-link">Tutorials</a>
+                    <a href="events.html" class="nav-link">Events</a>
+                    <a href="submit-craft.html" class="nav-link">Submit Craft</a>
+                    <a href="create-event.html" class="nav-link">Create Event</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+
+                <div class="user-menu" id="userMenu">
+                    <!-- Will be populated by JS -->
+                </div>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-sparkles"></i>
+                    <span>Welcome to the Creative Community</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="gradient-text">Unleash Your</span><br>
+                    <span class="white-text">Creative Spirit</span>
+                </h1>
+                
+                <p class="hero-description">
+                    Discover thousands of craft tutorials, join workshops, and share your creations 
+                    with a vibrant community of makers.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="tutorials.html" class="btn btn-primary">
+                        Explore Tutorials
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="events.html" class="btn btn-secondary">
+                        <i class="fas fa-calendar"></i>
+                        View Events
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Crafts Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <h2 class="section-title">Trending Crafts</h2>
+                    <p class="section-subtitle">Most popular craft ideas this week</p>
+                </div>
+                <a href="tutorials.html" class="view-all">
+                    View All
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="craft-grid" id="featuredCrafts">
+                <!-- Will be populated by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <h2 class="section-title">Upcoming Events</h2>
+                    <p class="section-subtitle">Join workshops and exhibitions near you</p>
+                </div>
+                <a href="events.html" class="view-all">
+                    View All
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="event-grid" id="upcomingEvents">
+                <!-- Will be populated by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section">
+        <div class="container">
+            <div class="cta-box">
+                <h2 class="cta-title">Ready to Share Your Creativity?</h2>
+                <p class="cta-description">
+                    Join thousands of crafters sharing their projects and inspiring others. 
+                    Upload your craft tutorial or organize a workshop today!
+                </p>
+                <div class="cta-buttons">
+                    <a href="submit-craft.html" class="btn btn-white">Submit Your Craft</a>
+                    <a href="create-event.html" class="btn btn-outline">Create an Event</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">C</div>
+                        <span class="logo-text">Craftopia</span>
+                    </div>
+                    <p class="footer-description">
+                        Your ultimate destination for craft tutorials, workshops, and creative inspiration. 
+                        Join our community of makers and creators.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="tutorials.html">Tutorials</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="submit-craft.html">Submit Craft</a></li>
+                        <li><a href="create-event.html">Create Event</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Craftopia. All rights reserved. Made with ❤️ by craft enthusiasts.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="home.js"></script>
+</body>
+</html>

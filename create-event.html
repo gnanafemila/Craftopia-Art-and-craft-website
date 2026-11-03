@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Event - Craftopia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">C</div>
+                    <span class="logo-text">Craftopia</span>
+                </a>
+                
+                <div class="nav-links" id="navLinks">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="tutorials.html" class="nav-link">Tutorials</a>
+                    <a href="events.html" class="nav-link">Events</a>
+                    <a href="submit-craft.html" class="nav-link">Submit Craft</a>
+                    <a href="create-event.html" class="nav-link active">Create Event</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+
+                <div class="user-menu" id="userMenu"></div>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <div class="form-container" style="max-width: 800px;">
+                <div class="form-card">
+                    <div class="form-header">
+                        <h1 class="form-title">Create Workshop/Event</h1>
+                        <p class="form-subtitle">Organize a craft workshop or exhibition</p>
+                    </div>
+
+                    <div id="message" class="alert" style="display: none;"></div>
+
+                    <form id="createEventForm">
+                        <div class="form-group">
+                            <label class="form-label">Event Title *</label>
+                            <input type="text" id="title" class="form-input" placeholder="e.g., Watercolor Painting Workshop" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Description *</label>
+                            <textarea id="description" class="form-textarea" placeholder="Describe your event..." required></textarea>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Category *</label>
+                                <select id="category" class="form-select" required>
+                                    <option value="">Select category</option>
+                                    <option value="Painting">Painting</option>
+                                    <option value="Pottery">Pottery</option>
+                                    <option value="Jewelry">Jewelry</option>
+                                    <option value="Crafts">Crafts</option>
+                                    <option value="Knitting">Knitting</option>
+                                    <option value="Exhibition">Exhibition</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Event Type *</label>
+                                <select id="eventType" class="form-select" required>
+                                    <option value="">Select type</option>
+                                    <option value="online">Online</option>
+                                    <option value="offline">Offline</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Date *</label>
+                                <input type="date" id="date" class="form-input" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Time *</label>
+                                <input type="time" id="time" class="form-input" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Location *</label>
+                            <input type="text" id="location" class="form-input" placeholder="Address or Zoom link" required>
+                            <span class="form-hint">For online events, add meeting link here</span>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Price (Rupees) *</label>
+                                <input type="number" id="price" class="form-input" min="0" step="0.01" placeholder="0.00" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Max Participants *</label>
+                                <input type="number" id="maxParticipants" class="form-input" min="1" placeholder="20" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Event Image URL *</label>
+                            <input type="url" id="imageUrl" class="form-input" placeholder="https://example.com/image.jpg" required>
+                            <span class="form-hint">Paste a link to your event image</span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary form-submit">
+                            <i class="fas fa-calendar-plus"></i>
+                            Create Event
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">C</div>
+                        <span class="logo-text">Craftopia</span>
+                    </div>
+                    <p class="footer-description">
+                        Your ultimate destination for craft tutorials and creative inspiration.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="tutorials.html">Tutorials</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="submit-craft.html">Submit Craft</a></li>
+                        <li><a href="create-event.html">Create Event</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Craftopia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="create-event.js"></script>
+</body>
+</html>
